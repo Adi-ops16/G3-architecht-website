@@ -9,3 +9,97 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+
+/* dark01 */
+.gray{
+  color: #131313;
+}
+
+/* dark02 */
+.text-gray{
+  color: #424242;
+}
+
+/* dark03 */
+.text-light-gray{
+  color: #727272;
+}
+
+.bg-light{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn{
+  background-color: #FF900E;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 3.125rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-size:1.25rem ;
+  font-weight: 600;
+}
+
+/* header styles */
+
+/* navbar styles */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.brand{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar , .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner styles */
+.banner-content{
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 7.25rem;
+}
+.banner-tytle{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-img{
+  width: 100%;
+}
+
+
+/* responsive-style */
+
+/* small-device */
+
+@media screen and (max-width:576px) {
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
+  .nav-links{
+    margin-top: 2rem;
+  }
+  .nav-item{
+    list-style:circle;
+    margin-top: 1.1rem;
+  }
+}
