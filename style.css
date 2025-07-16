@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .work-sans-font {
@@ -11,36 +11,39 @@
 }
 
 /* shared styles */
-main{
+main {
   max-width: 1440px;
   margin: 0 auto;
 }
-main > section{
+
+main>section {
   margin-top: 130px;
 }
-.display-flex{
+
+.display-flex {
   display: flex;
 }
 
 /* dark01 */
-.gray{
+.gray {
   color: #131313;
 }
 
 /* dark02 */
-.text-gray{
+.text-gray {
   color: #424242;
 }
 
 /* dark03 */
-.text-light-gray{
+.text-light-gray {
   color: #727272;
 }
 
-.bg-light{
+.bg-light {
   background-color: rgba(255, 144, 14, 0.1);
 }
-.btn{
+
+.btn {
   background-color: #FF900E;
   color: white;
   margin-top: 2rem;
@@ -49,78 +52,142 @@ main > section{
   border-radius: 0.5rem;
   border: none;
   color: white;
-  font-size:1.25rem ;
+  font-size: 1.25rem;
   font-weight: 600;
+}
+
+.section-tytle {
+  font-size: 3rem;
+  margin-bottom: 24px;
 }
 
 /* header styles */
 
 /* navbar styles */
-.navbar{
+.navbar {
   justify-content: space-between;
   align-items: center;
   padding-top: 3rem;
 }
-.nav-item{
+
+.nav-item {
   list-style: none;
   margin-right: 30px;
 }
-.brand{
+
+.brand {
   font-weight: 700;
   font-size: 3rem;
 }
-.nav-link{
+
+.nav-link {
   text-decoration: none;
   font-weight: 500;
 }
-.navbar , .banner{
+
+.navbar,
+.banner {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 /* banner styles */
-.banner-content{
+.banner-content {
   max-width: 862px;
   margin: 0 auto;
   text-align: center;
   margin-top: 7.25rem;
 }
-.banner-tytle{
+
+.banner-tytle {
   font-size: 4rem;
   font-weight: 700;
 }
-.banner-img{
+
+.banner-img {
   width: 100%;
 }
 
 /* team-styles */
-.teams{
+.teams {
   align-items: center;
   gap: 76px;
 }
-.team-img{
+
+.team-img {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-.features{
+
+.features {
   max-width: 530px;
 }
-.feature-tytle{
-font-size: 3rem;
-margin-bottom: 24px;
-}
-#exception{
+
+#exception {
   color: #727272;
 }
-.feature-tytle > b{
+
+.section-tytle>b {
   color: #131313;
   font-weight: bold;
 }
-.feature-tytle > span{
+
+.section-tytle>span {
   color: #FF900E;
 }
 
+
+
+
+/* .facts-style */
+
+.facts-container {
+  justify-content: space-around;
+}
+
+.fact {
+  border: 1px solid #FF900E;
+  margin-top: 100px;
+  text-align: center;
+  padding: 40px 50px;
+  border-radius: 8px;
+}
+
+.fact-number {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #424242;
+}
+
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #727272;
+}
+/* sponsor-section-styles */
+
+.sponsor{
+  text-align: center;
+}
+.sponsor-logo-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.sponsor-logo > img{
+  filter: grayscale(100%);
+}
+/* footer-section-styles */
+.footer-dialogue{
+  max-width: 1440px;
+  text-align: center;
+  margin:100px auto;
+  border-radius: 8px;
+}
+.footer-para{
+  padding: 30px;
+}
 /* responsive-style */
 
 /* small-device */
@@ -131,38 +198,81 @@ margin-bottom: 24px;
 @media screen and (max-width:576px) {
   /* shared-small-device-style */
 
-  .navbar, 
+  .navbar,
   .nav-links,
-  .teams {
+  .teams,
+  .sponsor-logo-container 
+  {
     flex-direction: column;
   }
-  main > section{
+
+  main>section {
     margin-top: 50px;
   }
 
   /* nav-small-device-design */
 
-  .nav-links{
+  .nav-links {
     margin-top: 2rem;
   }
-  .nav-item{
-    list-style:circle;
+
+  .nav-item {
+    list-style: circle;
     margin-top: 1.1rem;
   }
+
   /* teams-small-device-design */
-.team-img{
-  grid-template-columns: repeat(1,1fr);
+  .team-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .features {
+    margin-left: 20px;
+  }
+
+  /* fact-style */
+  .facts-container {
+    flex-wrap: wrap;
+  }
+
+  .some-facts {
+    margin: 3%;
+  }
+  /* sponsor-styles */
+.sponsor-logo > img{
+  margin-top: 5%;
 }
-.features{
-  margin-left: 20px;
+.footer-dialogue{
+    width: 90%;
+   }
 }
-}
+
 
 
 /* medium-size-device-responsive */
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .teams{
-      flex-direction: column;
-    }
+  .teams {
+    flex-direction: column;
+  }
+
+  .facts-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+  }
+
+  .some-facts {
+    margin: 3%;
+  }
+   .sponsor-logo-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,100px);
+    grid-row: span 2;
+    justify-items: center;
+   }
+   .footer-dialogue{
+    width: 90%;
+   }
 }
